@@ -1,0 +1,81 @@
+<!--pages/shangpin/shang.wxml-->
+<!-- banner -->
+<swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item>
+    <image src="{{con.pro.img_arr}}" wx:if='{{con.pro.img_arr}}' mode="aspectFill"></image>
+    <video src="{{item.pro.img_arr}}" wx:if='{{item.pro.img_arr}}' autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" ></video>
+  </swiper-item>
+</swiper>
+<view class="ajw">
+  <text>{{con.pro.intro}}</text>
+</view>
+<view style="margin-top:30rpx;">
+  <van-row>
+    <van-col span="8" offset="1">
+      <text class="dc">{{con.pro.price}}</text>
+    </van-col>
+    <van-col span="7" offset="8">
+      <text class="dca">库存:9984</text>
+    </van-col>
+  </van-row>
+</view>
+<view style="margin-top:70rpx;">
+  <van-tabs active="{{ active }}" bind:change="onChange">
+    <van-tab title="图文详情">
+    <rich-text nodes="{{con.pro.content}}" bindtap="tap"></rich-text>
+    </van-tab>
+    <van-tab title="产品参数">
+      <block wx:for="{{asws}}" wx:key>
+        <view style="margin-top:30rpx;border-bottom:1px solid #a8a8a8;padding-bottom:40rpx;">
+          <van-row>
+            <van-col span="7" offset="2">
+              <text class="dca">{{item.tex}}</text>
+            </van-col>
+            <van-col span="5">
+              <text>{{item.op}}</text>
+            </van-col>
+          </van-row>
+        </view>
+      </block>
+    </van-tab>
+  </van-tabs>
+</view>
+<view class="aiws">
+  <button bindtap="buta" style="width:100%;height:40px;padding-top:20rpx;font-size:14px;border:1px solid #e2e2e2;background-color:#1196db;">立即购买
+  </button>
+</view>
+<van-action-sheet show="{{ show }}">
+  <view style="height:400rpx;padding-top:30rpx;">
+    <van-row>
+      <van-col span="6" offset="2">
+        <cover-image style="height:200rpx;" wx:if='{{con.pro.img_arr}}' src="{{con.pro.img_arr}}"></cover-image>
+      </van-col>
+      <view>
+        <van-col span="7" offset="1">
+          <view style="margin-top:70rpx;">
+            <text style="font-size:15px;margin-top:50rpx;">{{con.pro.intro}}</text>
+          </view>
+          <view>
+            <text style="color:red;margin-top:20rpx;">{{apa}}</text>
+          </view>
+          <text class="dca" style="margin-top:15rpx;">库存：9984</text>
+        </van-col>
+      </view>
+      <van-col span="2" offset="6">
+        <text bindtap="onover">X</text>
+      </van-col>
+    </van-row>
+    <view style="margin-top:40rpx;">
+      <van-row>
+        <van-col span="6" offset="2">购买数量</van-col>
+        <van-col span="8" offset="7">
+          <van-stepper value="{{ 1 }}" bind:change="onChange" />
+        </van-col>
+      </van-row>
+    </view>
+    <view style="margin-top:60rpx;">
+       <button bindtap="butas" style="width:100%;height:40px;padding-top:20rpx;font-size:14px;border:1px solid #e2e2e2;background-color:#1196db;">立即购买
+  </button>
+    </view>
+  </view>
+</van-action-sheet>

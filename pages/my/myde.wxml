@@ -1,0 +1,16 @@
+<!--pages/my/myde.wxml-->
+<view class="awaw">
+  <cover-image wx:if='{{aww.avatarUrl}}' class="miwa" src="{{aww.avatarUrl}}"></cover-image>
+  <text style="color:white;margin-top:40rpx;">{{aww.nickName}}</text>
+</view>
+<view class="apw">
+  <block wx:for="{{ajw}}" wx:key>
+    <view>
+      <navigator url="{{item.ua}}?title=navigate" hover-class="navigator-hover">
+        <cover-image class="iaw" src="{{item.uaw}}"></cover-image>
+        <text class="texaw">{{item.name}}</text>
+      </navigator>
+    </view>
+  </block>
+</view>
+<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权页面</button>

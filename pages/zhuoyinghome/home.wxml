@@ -1,0 +1,45 @@
+<!--pages/zhuoyinghome/home.wxml-->
+<!-- banner -->
+<swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{bann}}" wx:key>
+    <image src="{{item.photo}}" mode="aspectFill"></image>
+    <video src="{{item.photo}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" ></video>
+  </swiper-item>
+</swiper>
+<!-- 两个框框 -->
+<block wx:for="{{bane}}" wx:key>
+  <view class="wid" bindtap="dispath" id="{{item.id}}">
+    <view>
+      <cover-image class="miwo" src="{{item.photo_x}}"></cover-image>
+    </view>
+    <view class="bor">
+      <view>
+        <text style="font-size:22rpx;" class="toas">{{item.name}}</text>
+      </view>
+      <view class="toa">
+        <van-row>
+          <van-col span="4" offset="1">
+            <text class="colora">{{item.price}}</text>
+          </van-col>
+          <van-col span="4" offset="8">
+            <text class="colorb">{{item.price}}</text>
+          </van-col>
+        </van-row>
+      </view>
+      <view class="toas">
+        <van-row>
+          <van-col span="10">
+            <text class="colorb">新品推荐</text>
+          </van-col>
+          <van-col span="10" offset="3">
+            <text class="colorb">销量：36</text>
+          </van-col>
+        </van-row>
+      </view>
+    </view>
+  </view>
+</block>
+<!-- 按钮 -->
+<view class="aiw">
+  <button style="width:80%;height:40px;padding-top:20rpx;font-size:14px;border:1px solid #e2e2e2;background-color:white;">点击查看更多</button>
+</view>

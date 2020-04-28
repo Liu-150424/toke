@@ -1,0 +1,12 @@
+<!--logs.wxml-->
+<!--logs.wxml-->
+<view class="back">
+  <view class="bo">好友召集令</view>
+  <view class="kuang">
+    <view>
+      邀请码
+    </view>
+    <image class="tu" src="{{aa}}"></image>
+    <view>邀请好友扫一扫</view>
+  </view>
+</view>

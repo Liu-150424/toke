@@ -1,0 +1,35 @@
+/* pages/zhuoyinghome/home.wxss */
+.miwo{
+  width: 100%;
+}
+.bor{
+  border: 1px solid #a8a8a8;
+  width: 100%;
+  border-top: none;
+  margin-left: 2%;
+}
+.toa{
+  margin-top: 40rpx;
+}
+.toas{
+  margin-top: 20rpx;
+}
+.colora{
+  color: red;
+}
+.colorb{
+  color: #a8a8a8;
+}
+.toas{
+  margin-left: 20rpx;
+}
+.wid{
+  width: 45%;
+  float: left;
+  margin-left: 2%;
+}
+.aiw{
+  clear: both;
+  padding-top: 120rpx;
+}
+

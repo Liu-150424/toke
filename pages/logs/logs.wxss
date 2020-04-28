@@ -1,0 +1,32 @@
+.back{
+  background-image: url('http://m.qpic.cn/psb?/V136v8Jv2fN2zC/Lbz0fFalFm5H7eGQqJgFHXdMl7Z.LQ7phNyiWd.pygY!/b/dL8AAAAAAAAA&bo=OAQhCQAAAAARByQ!&rf=viewer_4&t=5');
+background-size: 100% auto;
+background-repeat: no-repeat;
+height: 100vh;
+text-align: center;
+display: flex;
+/* justify-content: center; */
+flex-direction: column;
+align-items:center;
+}
+.kuang{
+  width: 60%;
+  height: 60vh;
+  /* background-color: white; */
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh;
+  font-size: 35rpx;
+}
+.bo{
+  font-size: 50rpx;
+  color: rgba(109, 109, 240, 0.801);
+  margin: 10% 0;
+}
+.tu{
+  margin:10% 0;
+  width:300rpx;
+  height: 300rpx;
+}

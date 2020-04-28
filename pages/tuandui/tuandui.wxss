@@ -1,0 +1,24 @@
+/* pages/tuandui/tuandui.wxss */
+.waw{
+  display: flex;
+  justify-content: center;
+  margin-top: 15rpx;
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 15rpx;
+  font-size: 14px;
+}
+.miwa{
+  width: 65%;
+  border-radius: 25%;
+}
+.toa{
+  margin-top: 30rpx;
+}
+.cob{
+  position: relative;
+  top: 15rpx;
+  color: darkgray;
+}
+.coa{
+  color: black;
+}

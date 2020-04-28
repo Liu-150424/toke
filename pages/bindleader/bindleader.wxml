@@ -1,0 +1,8 @@
+<!--pages/bindleader/bindleader.wxml-->
+<view class="awaw">
+  <cover-image wx:if='{{itou}}' class="miwa" src="{{itou}}"></cover-image>
+  <text style="color:white;margin-top:40rpx;">{{name}}</text>
+</view>
+<view class="awo">
+  <van-button type="default" color="#596cf9" bind:click="buta">提交申请</van-button>
+</view>

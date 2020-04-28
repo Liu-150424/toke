@@ -1,0 +1,63 @@
+<!-- index.wxml -->
+<view class="mint">
+  <cover-image class="mint_ima" src="http://i2.tiimg.com/704616/4dda7eeac5df3282.jpg"></cover-image>
+</view>
+<view class="ani">
+<view class="poa">
+  <van-row>
+    <van-col span="4">我的积分</van-col>
+    <van-col span="5" offset="8">待审核积分</van-col>
+  </van-row>
+</view>
+<view class="poa">
+  <van-row>
+    <van-col span="4">{{awa.jifen}}</van-col>
+    <van-col span="5" offset="8">{{daishen.data}}</van-col>
+  </van-row>
+</view>
+<van-cell-group>
+  <van-field
+    value="{{username}}"
+    clearable
+    label="姓名"
+    placeholder="请输入姓名"
+    error-message="{{plo}}"
+    bind:focus="onClickIcon"
+  />
+  <van-field
+    value="{{tel.phoneNumber}}"
+    clearable
+    label="收款人电话"
+    error-message="{{awap}}"
+    placeholder="请输入手机号"
+    bind:blur="onClickIcone"
+  />
+    <van-field
+    value="{{ username }}"
+    clearable
+    label="提现账号"
+    placeholder="请输入银行卡号或支付宝账号"
+    bind:blur="onClickIconl"
+  />
+    <van-field
+    value="{{ username }}"
+    clearable
+    label="提现金额"
+    error-message=""
+    placeholder="请输入提现金额"
+    bind:blur="onClickIcons"
+  />
+    <van-field
+    value="{{ ae }}"
+    clearable
+    label="实际到账"
+    placeholder=""
+    bind:click-icon="onClickIcon"
+    disabled="true"
+  />
+</van-cell-group>
+<text class="ttw">注：提现每笔扣除10%的手续费</text>
+<view class="awo">
+  <van-button type="default" color="#596cf9" bind:click="buta">提交申请</van-button>
+</view>
+</view>

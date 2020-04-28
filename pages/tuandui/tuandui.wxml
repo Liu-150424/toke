@@ -1,0 +1,28 @@
+<!--pages/tuandui/tuandui.wxml-->
+<view class="wa">
+  <van-tabs active="{{ active }}">
+    <van-tab title="一级">
+      <view class="waw">
+        <text style="color:#888888;">一级用户数量：1</text>
+      </view>
+        <block wx:for="{{wae}}" wx:key>
+        <view class="toa">
+        <van-row>
+          <van-col span="5" offset="2">
+                <cover-image class="miwa" src="{{item.photo}}"></cover-image>
+          </van-col>
+          <van-col span="12">
+          <view><text class="coa">{{item.name}}</text></view>
+          <view><text class="cob">{{item.tel}}</text></view>
+          </van-col>
+        </van-row>
+      </view>
+      </block>
+    </van-tab>
+    <van-tab title="二级">
+      <view class="waw">
+        <text style="color:#888888;">二级用户数量：1</text>
+      </view>
+    </van-tab>
+  </van-tabs>
+</view>

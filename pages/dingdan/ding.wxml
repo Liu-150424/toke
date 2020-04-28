@@ -1,0 +1,40 @@
+<!--pages/dingdan/ding.wxml-->
+<view style="margin-top:15rpx;">
+  <van-row>
+    <van-col span="6" offset="2">
+      <cover-image style="height:130rpx;" wx:if='{{con.pro.img_arr}}' src="{{con.pro.img_arr}}"></cover-image>
+    </van-col>
+    <view>
+      <van-col span="7" offset="1">
+        <view>
+          <text style="font-size:15px;">{{con.pro.intro}}</text>
+        </view>
+        <view>
+          <text style="color:red;">{{jiages}}</text>
+        </view>
+        <text class="dca">数量：<text>{{num}}</text></text>
+      </van-col>
+    </view>
+  </van-row>
+</view>
+<view style="margin-top:35rpx;" bindtap="oapw">
+  <van-row>
+    <van-col span="1" offset="2">
+      <cover-image src="http://i2.tiimg.com/704616/136c2735916bb77a.png"></cover-image>
+    </van-col>
+    <view>
+      <van-col span="12" offset="1">
+        <text>{{dizhia.name}}<text>{{dizhia.address}}</text></text>
+      </van-col>
+    </view>
+  </van-row>
+</view>
+<view style="margin-top:45rpx;">
+  <text style="color:#a8a8a8;margin-left:60rpx;">备注</text>
+</view>
+<view class="asw">
+  <text>应共支付:<text style="color:red;font-size:15px;">{{jiages}}</text></text>
+</view>
+<view class="aiw">
+  <button bindtap="xianxia" style="width:80%;height:40px;padding-top:20rpx;font-size:14px;border:1px solid #e2e2e2;background-color: #a8a8a8;">线下支付</button>
+</view>

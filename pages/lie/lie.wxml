@@ -1,0 +1,27 @@
+<!--pages/lie/lie.wxml-->
+<block wx:for="{{liea}}" wx:key>
+<view style="margin-top:80rpx;border:1px solid red;">
+<van-row>
+  <van-col span="8">
+  <text>姓名:<text>{{item.name}}</text></text>
+  </van-col>
+  <van-col span="8"><text>电话:<text>{{item.tel}}</text></text></van-col>
+</van-row>
+<van-row>
+  <van-col span="18">
+  <text>地址:<text>{{item.address}}</text></text>
+  </van-col>
+</van-row>
+<van-row>
+  <van-col span="12" offset="1">
+  <text bindtap="sas" id="{{item.id}}">默认</text>
+  </van-col>
+  <van-col span="3" offset="5">
+  <text bindtap="waw" id="{{item.id}}">删除</text>
+  </van-col>
+</van-row>
+</view>
+</block>
+<view style="margin-top:340rpx;">
+<button bindtap="taw" style="width:80%;height:40px;padding-top:20rpx;font-size:14px;border:1px solid #e2e2e2;background-color: #a8a8a8;">添加地址</button>
+</view>

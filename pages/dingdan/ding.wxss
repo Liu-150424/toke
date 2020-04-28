@@ -1,0 +1,9 @@
+/* pages/dingdan/ding.wxss */
+.asw{
+  display: flex;
+  justify-content: center;
+  margin-top: 200rpx;
+}
+.aiw{
+  margin-top: 120rpx;
+}

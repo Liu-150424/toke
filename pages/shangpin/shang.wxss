@@ -1,0 +1,19 @@
+/* pages/shangpin/shang.wxss */
+.ajw{
+  margin-top: 60rpx;
+  margin-left: 30rpx;
+}
+.dc{
+  color: red;
+}
+.dca{
+  color: #a8a8a8;
+}
+.aiws{
+  position: fixed;
+  width: 100%;
+  top: 94%;
+}
+.imga{
+  height: 100rpx;
+}
